@@ -1,6 +1,6 @@
 package org.example.model;
 
-public class Heroe {
+public abstract class Heroe {
     private String fuerza;
     private String traje;
     private String identidad;
@@ -44,4 +44,6 @@ public class Heroe {
         this.identidad = identidad;
         this.nombre = nombre;
     }
+
+    public abstract void infiltrarse();
 }

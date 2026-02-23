@@ -1,7 +1,20 @@
 package org.example.model;
 
-public class Hulk extends Heroe{
-    public Hulk(String fuerza, String traje, String identidad, String nombre) {
-        super(fuerza, traje, identidad, nombre);
+import org.example.Interfaces.Trepador;
+
+public class Hulk extends Heroe implements Trepador {
+
+    public Hulk() {
+        super("Muy Alta", "Fuerza Gamma", "Bruce Banner", "Hulk");
+    }
+
+    @Override
+    public void trepar() {
+        System.out.println("Hulk trepa edificios usando su fuerza bruta 💪");
+    }
+
+    @Override
+    public void infiltrarse() {
+        System.out.println("Hulk intenta infiltrarse... pero rompe todo 😅");
     }
 }

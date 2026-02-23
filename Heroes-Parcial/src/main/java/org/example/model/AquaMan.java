@@ -1,7 +1,20 @@
 package org.example.model;
 
-public class AquaMan extends Heroe {
-    public AquaMan(String fuerza, String traje, String identidad, String nombre) {
-        super(fuerza, traje, identidad, nombre);
+import org.example.Interfaces.Acuatico;
+
+public class AquaMan extends Heroe implements Acuatico {
+
+    public AquaMan() {
+        super("Media", "Tridente Atlante", "Arthur Curry", "AquaMan");
+    }
+
+    @Override
+    public void nadar() {
+        System.out.println("AquaMan nada a gran velocidad 🌊");
+    }
+
+    @Override
+    public void infiltrarse() {
+        System.out.println("AquaMan se infiltra desde el océano 🌊");
     }
 }
