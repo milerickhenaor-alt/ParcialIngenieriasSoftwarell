@@ -2,9 +2,11 @@ package org.example.model;
 
 import org.example.Interfaces.Trepador;
 import org.example.Interfaces.Sigiloso;
-
+/** * Representa a Spider-Man.
+ * Combina habilidades de escalada y sigilo arácnido.
+ */
 public class SpiderMan extends Heroe implements Trepador, Sigiloso {
-
+    /** Inicializa a Peter Parker con sus atributos de fuerza y traje arácnido. */
     public SpiderMan() {
         super(
                 "Media-Alta",          // fuerza

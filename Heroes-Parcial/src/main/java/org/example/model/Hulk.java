@@ -1,9 +1,12 @@
 package org.example.model;
 
 import org.example.Interfaces.Trepador;
-
+/**
+ * Representa al héroe Hulk.
+ * Basado en fuerza bruta y capacidad de escalada.
+ */
 public class Hulk extends Heroe implements Trepador {
-
+    /** Constructor: Define los atributos Gamma de Bruce Banner. */
     public Hulk() {
         super("Muy Alta", "Fuerza Gamma", "Bruce Banner", "Hulk");
     }
